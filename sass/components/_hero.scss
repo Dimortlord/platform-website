@@ -1,0 +1,223 @@
+.hero {
+  padding-top: 100px;
+}
+
+.hero-box {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+    flex-direction: row;
+  }
+}
+
+.hero-control {
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 100px;
+    width: 548px;
+    height: 204px;
+  }
+}
+
+.hero__title {
+  margin-bottom: 20px;
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 1.18;
+
+  color: #000000;
+
+  @media screen and (min-width: 420px) {
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 450px;
+    margin-bottom: 20px;
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 1.13;
+  }
+}
+
+.hero__text {
+  margin-bottom: 20px;
+  font-family: "PT Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 142.5%;
+  /* or 23px */
+
+  color: #000000;
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 450px;
+    font-family: "PT Serif";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.4;
+  }
+}
+
+.hero-btn {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 420px) {
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+  }
+}
+
+// .hero-btn__button {
+//   width: 170px;
+//   height: 60px;
+//   margin-right: 20px;
+//   background: blue;
+
+//   font-family: "Pt Serif";
+//   font-style: normal;
+//   font-weight: 600;
+//   font-size: 14px;
+//   line-height: 1.42;
+//   color: white;
+//   border-radius: 15px;
+
+//   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+// }
+
+// .hero-btn__button {
+//   text-decoration: none;
+//   display: inline-block;
+//   color: white;
+//   padding: 20px 30px;
+//   margin: 10px 20px;
+//   border-radius: 10px;
+//   font-family: "Montserrat", sans-serif;
+//   text-transform: uppercase;
+//   letter-spacing: 2px;
+//   background-image: linear-gradient(
+//     to right,
+//     #9eefe1 0%,
+//     #4830f0 51%,
+//     #9eefe1 100%
+//   );
+//   background-size: 200% auto;
+//   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+//   transition: 0.5s;
+
+//   &:hover {
+//     background-position: right center;
+//   }
+// }
+
+.hero-btn__button {
+  background: #1d1b26;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  position: relative;
+  padding: 15px 30px;
+  border: 1px solid;
+  border-image: linear-gradient(180deg, #334ff0, #514ff0, #6d4ff0, #a94ff0);
+  border-image-slice: 1;
+  margin-right: 20px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  overflow: hidden;
+  letter-spacing: 2px;
+  transition: 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 0;
+    width: 100%;
+    z-index: -1;
+    color: white;
+    background: linear-gradient(180deg, #334ff0, #514ff0, #6d4ff0, #a94ff0);
+    transition: 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+
+  &:hover {
+    background: rgba(255, 255, 255, 0);
+  }
+  &:hover:before {
+    bottom: 0%;
+    top: auto;
+    height: 100%;
+  }
+}
+
+.hero-btn__text {
+  color: #a94fab;
+}
+
+.hero-img {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 420px) {
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+  }
+}
+
+.hero-img__photo {
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 865px;
+    height: 644.77px;
+  }
+}
+
+.hero-img__photo-secondary {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+    z-index: 0;
+    position: absolute;
+    width: 779.57px;
+    height: 614.53px;
+  }
+}
